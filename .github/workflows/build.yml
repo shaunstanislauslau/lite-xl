@@ -245,16 +245,16 @@ jobs:
     steps:
     - name: Set Environment Variables
       run: echo "INSTALL_REF=${GITHUB_REF##*/}" >> "$GITHUB_ENV"
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: Linux Artifacts
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: macOS DMG Image
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: Source Code Tarball
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: Windows Artifacts
     - name: Display File Information
